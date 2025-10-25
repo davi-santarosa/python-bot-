@@ -1,6 +1,5 @@
 import discord 
 import os 
-import random 
 from discord.ext import commands
 from dotenv import load_dotenv
 from yt_dlp import YoutubeDL 
@@ -27,15 +26,15 @@ bot = commands.Bot(
     )
 
 @bot.event
-async def on_ready(): 
 
+async def on_ready(): 
     controller = SearchMusic(bot)
 
     await bot.add_cog(controller)
     await bot.add_cog(PlayMusic(bot, controller))
     await bot.add_cog(QueueMusic(bot, controller))
     await bot.add_cog(SkipMusic(bot, controller))
-    await bot.add_cog(StopMusic(bot, controller))
+    await bot.add_cog(StopMusic(bot, controller)) 
 
     await bot.add_cog(Ping(bot))
     await bot.add_cog(AllCommands(bot))
