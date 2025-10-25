@@ -1,44 +1,35 @@
-# 🎶 Discord Bot em Python
+# 🤖 Discord Bot em Python
 
-Um bot completo desenvolvido em **Python** com a biblioteca **discord.py**, capaz de:
-- 🎮 Criar times aleatórios entre os membros (`!team`)
-- 🧑‍💻 Exibir informações detalhadas de usuários (`!userinfo`)
-- 🎵 Tocar músicas diretamente do **YouTube**, usando **FFmpeg** e uma **API de extração de áudio**
+Um bot completo desenvolvido com **discord.py**, capaz de criar times, mostrar informações de usuários e tocar músicas diretamente do **YouTube** usando **FFmpeg**.
 
 ---
 
 ## 🚀 Funcionalidades
 
-### 🧩 `!team`
-Cria **dois times aleatórios** com base nos membros mencionados.  
-- 🔸 Divide automaticamente em `Time RED` e `Time BLUE`.  
-- 🔸 Exibe o resultado em um **embed estilizado**.  
-- 🔸 Garante que pelo menos dois membros sejam mencionados.
+- 🎮 **Comando `/team`** — Cria dois times aleatórios entre os usuários mencionados.
+- 🔍 **Comando `/userinfo`** — Exibe informações detalhadas sobre um membro do servidor.
+- 🎵 **Comando `/play`** — Toca músicas do **YouTube**, baixadas via API, utilizando **FFmpeg** para processar o áudio.
+- 🛑 **Comando `/stop`** — Interrompe a reprodução atual.
 
 ---
 
-### 🧑‍💻 `!userinfo`
-Mostra informações detalhadas sobre um usuário.  
-- 🆔 ID do usuário  
-- 📛 Nome e apelido  
-- 🟢 Status  
-- 📅 Data de criação da conta  
-- 🔓 Data de entrada no servidor  
-- 🎭 Lista de cargos  
+## 🧠 Tecnologias Utilizadas
+
+- [Python 3.10+](https://www.python.org/)
+- [discord.py](https://github.com/Rapptz/discord.py)
+- [FFmpeg](https://ffmpeg.org/)
+- Biblioteca de YouTube (ex: `yt_dlp` ou `pytube`)
+- API do YouTube (para busca e extração de áudio)
 
 ---
 
-### 🎵 `!play <nome da música ou link>`
-Reproduz músicas diretamente de vídeos do **YouTube**.  
-- Utiliza **FFmpeg** para processar o áudio.  
-- Faz uso de uma biblioteca (como `yt_dlp` ou similar) para obter o áudio via **API do YouTube**.  
-- Suporta links diretos ou busca por nome.  
-- Se já houver música tocando, adiciona a nova na fila.  
-- Inclui comandos como:
-  - `!pause` → pausa a reprodução  
-  - `!resume` → retoma a reprodução  
-  - `!skip` → pula para a próxima música  
-  - `!stop` → para tudo e limpa a fila  
+## ⚙️ Instalação e Configuração
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/davi-santarosa/python-bot-.git
+   cd python-bot-
+
 
 ---
 
